@@ -14,8 +14,7 @@ searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const query = searchInput.value.trim();
   if(query) {
-    console.log("Search for:", query); 
-    // Later: redirect to search.html?q=...
+    window.location.href = `search.html?q=${encodeURIComponent(query)}`;
   }
 });
 
