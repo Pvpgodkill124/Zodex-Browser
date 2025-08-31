@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZODEX Browser</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ZODEX</h1>
+    <button id="menuBtn">☰</button>
+  </header>
+
+  <main>
+    <form id="searchForm">
+      <input type="text" id="searchInput" placeholder="Search with ZODEX..." required>
+      <button type="submit">Go</button>
+    </form>
+  </main>
+
+  <nav id="sideMenu" class="hidden">
+    <h2>Settings</h2>
+    <label>
+      <input type="checkbox" id="toggleClock"> Show Clock
+    </label>
+    <label>
+      <input type="checkbox" id="toggleWeather"> Show Weather
+    </label>
+  </nav>
+
+  <footer>
+    <p>© 2025 ZODEX</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
